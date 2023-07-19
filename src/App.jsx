@@ -20,7 +20,7 @@ if(!isAuth){//if user is not registered or signed in, render authentication page
 return (//else
   <>
     {
-      room?<Chat/>:(
+      room?<Chat room={room}/>:(
         <div>
         <label htmlFor="roomname">Enter room name</label>
         <input type="text" id='roomname' ref={inputRef}/>
