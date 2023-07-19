@@ -12,5 +12,5 @@ const firebaseConfig = {
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
-export const auth= getAuth(app)
-export const provider = new GoogleAuthProvider();
+export const auth= getAuth(app)// function is provided by the Firebase Authentication library, and it returns an authentication object that allows you to perform various authentication-related operations.
+export const provider = new GoogleAuthProvider();// constructor function is called, which creates an instance of the Google provider for Firebase Authentication.
