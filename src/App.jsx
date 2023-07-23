@@ -1,6 +1,6 @@
 import { useState,useRef } from 'react'
 import './App.css'
-import Auth from './auth'
+import Auth from './components/auth'
 import Chat from './components/chat'
 import {Cookies} from 'react-cookie'
 const cookies=new Cookies()

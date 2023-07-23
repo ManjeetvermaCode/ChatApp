@@ -2,7 +2,7 @@ import {Cookies} from 'react-cookie'
 const cookies=new Cookies()
 
 import {signInWithPopup, } from 'firebase/auth'
-import {provider,auth} from './firebase-config'
+import {provider,auth} from '../firebase-config'
 export default function Auth({setauth}){
     
     const SignInWGoogle=async()=>{
