@@ -8,7 +8,6 @@ export default function Auth({setauth}){
     const SignInWGoogle=async()=>{
         try {
             const result=await signInWithPopup(auth,provider)
-            console.log(result)
             cookies.set('user-token',result.user.refreshToken)//The refreshToken is used to obtain a new access token when the current one expires, without requiring the user to reauthenticate.
             setauth(true)
         } catch (error) {
