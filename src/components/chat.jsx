@@ -29,7 +29,6 @@ const handlesubmit=async(e)=>{
         user:auth.currentUser.displayName,
         room,
     })//used for storing document into collection
-    console.log('submitted')
     setmsg("")
 }
 
